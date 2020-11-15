@@ -13,6 +13,8 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+puts songs.length
+
 # The help command should output instructions for the user on how to use the jukebox.
 def help
   puts "I accept the following commands:"
