@@ -31,6 +31,9 @@ end
 
 # The play command should ask a user to input a song name or track number. It should then output the appropriate song name.
 
+def play(songs)
+  
+end
 
 # If the user types exit, the jukebox should say goodbye and the program should shut down.
 
