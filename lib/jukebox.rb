@@ -1,5 +1,6 @@
 require "pry"
 
+# an array of song titles:
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
