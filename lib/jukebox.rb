@@ -36,6 +36,8 @@ def play(songs)
   
   # It then stores the user's response using gets.strip.
   
+  # If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>".
+  
   
 end
 
