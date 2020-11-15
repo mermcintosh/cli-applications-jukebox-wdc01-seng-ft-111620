@@ -55,7 +55,11 @@ play(songs)
 # If the user types exit, the jukebox should say goodbye and the program should shut down.
 
 def is_number(user_response)
-  user_response.
+  res = user_response.to_i
+  if res.class == "Integer"
+    return true
+  else
+    return false
 end
 
 
