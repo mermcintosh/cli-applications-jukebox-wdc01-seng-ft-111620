@@ -13,8 +13,6 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-puts songs.length
-
 # The help command should output instructions for the user on how to use the jukebox.
 def help
   puts "I accept the following commands:"
@@ -39,7 +37,7 @@ def play(songs)
   # It then stores the user's response using gets.strip.
   user_response = gets.strip
   # If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>".
-  
+  if user_response <=
     #decide whether the user's input is valid
       #if valid, play the song
         
