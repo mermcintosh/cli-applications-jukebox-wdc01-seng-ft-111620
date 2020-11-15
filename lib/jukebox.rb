@@ -37,19 +37,19 @@ def play(songs)
   # It then stores the user's response using gets.strip.
   user_response = gets.strip
   # If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>".
-  
+  p songs.select { |elem| substrings.include?(elem) }
   # if user has entered song name
   
   
   # if user has entered a number
-  if user_response >= 1 && user_response <= songs.length
-    current_song = songs[user_response - 1]
-    puts "Playing #{current_song}."
-    #decide whether the user's input is valid
-      #if valid, play the song
+  # if user_response >= 1 && user_response <= songs.length
+  #   current_song = songs[user_response - 1]
+  #   puts "Playing #{current_song}."
+  #   #decide whether the user's input is valid
+  #     #if valid, play the song
         
-      # Otherwise, it should puts out: "Invalid input, please try again".
-  end
+  #     # Otherwise, it should puts out: "Invalid input, please try again".
+  # end
 end
 play(songs)
 # If the user types exit, the jukebox should say goodbye and the program should shut down.
