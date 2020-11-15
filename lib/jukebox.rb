@@ -35,10 +35,14 @@ def play(songs)
   # It first puts out the prompt: "Please enter a song name or number:"
   puts "Please enter a song name or number:"
   # It then stores the user's response using gets.strip.
-  
+  user_response = gets.strip
   # If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>".
   
-  # Otherwise, it should puts out: "Invalid input, please try again".
+    #decide whether the user's input is valid
+      #if valid, play the song
+        
+      # Otherwise, it should puts out: "Invalid input, please try again".
+
 end
 
 # If the user types exit, the jukebox should say goodbye and the program should shut down.
