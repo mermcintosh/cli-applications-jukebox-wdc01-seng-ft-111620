@@ -32,6 +32,8 @@ end
 # The play command should ask a user to input a song name or track number. It should then output the appropriate song name.
 
 def play(songs)
+  # It first puts out the prompt: "Please enter a song name or number:"
+  
   
 end
 
