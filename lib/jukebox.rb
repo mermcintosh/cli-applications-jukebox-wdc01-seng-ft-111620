@@ -22,6 +22,7 @@ def help
   puts "- exit : exits this program"
 end
 
+# The list command should output a list of songs that the user can play.
 def list(songs)
   songs.each_with_index do |song, index|
     puts "#{index+1}. #{song}"
