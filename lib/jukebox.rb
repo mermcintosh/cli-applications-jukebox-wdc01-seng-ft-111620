@@ -34,6 +34,8 @@ end
 def play(songs)
   # It first puts out the prompt: "Please enter a song name or number:"
   
+  # It then stores the user's response using gets.strip.
+  
   
 end
 
