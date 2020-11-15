@@ -43,8 +43,8 @@ def play(songs)
       #if valid, play the song
         
       # Otherwise, it should puts out: "Invalid input, please try again".
-
+  end
 end
-
+play(songs)
 # If the user types exit, the jukebox should say goodbye and the program should shut down.
 
