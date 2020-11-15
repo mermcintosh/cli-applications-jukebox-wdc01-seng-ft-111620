@@ -37,7 +37,7 @@ def play(songs)
   # It then stores the user's response using gets.strip.
   user_response = gets.strip
   # If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>".
-  p songs.select { |elem| substrings.include?(elem) }
+  p songs.select { |song| user_response.include?(song) }
   # if user has entered song name
   
   
