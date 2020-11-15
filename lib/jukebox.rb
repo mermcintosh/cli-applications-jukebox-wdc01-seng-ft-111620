@@ -28,51 +28,51 @@ def help
   puts "- exit : exits this program"
 end
 
-def list(my_songs)
-  my_songs.each_with_index do |song, index|
-    puts "#{index+1}. #{song}"
-  end
-end
+# def list(my_songs)
+#   my_songs.each_with_index do |song, index|
+#     puts "#{index+1}. #{song}"
+#   end
+# end
 
-def play(my_songs)
-  puts "Please enter a song name or number:"
-  input = gets.chomp()
+# def play(my_songs)
+#   puts "Please enter a song name or number:"
+#   input = gets.chomp()
   
-  if (1..9).to_a.index(input.to_i) != nil
-    puts "Playing #{my_songs[input.to_i - 1]}"
-  elsif my_songs.index(input) != nil
-    puts "Playing #{input}"
-  else
-    puts "Invalid input, please try again"
-  end
-end
+#   if (1..9).to_a.index(input.to_i) != nil
+#     puts "Playing #{my_songs[input.to_i - 1]}"
+#   elsif my_songs.index(input) != nil
+#     puts "Playing #{input}"
+#   else
+#     puts "Invalid input, please try again"
+#   end
+# end
 
-def exit_jukebox
-  puts "Goodbye"
-end
+# def exit_jukebox
+#   puts "Goodbye"
+# end
 
-def run(my_songs)
-  puts "Please enter a command:"
-  user_response = gets.chomp
-  while user_response != "exit"
-    case user_response
-      when "help"
-        help
-        puts "Please enter a command:"
-        user_response = gets.chomp
-      when "list"
-        list(my_songs)
-        puts "Please enter a command:"
-        user_response = gets.chomp
-      when "play"
-        play(my_songs)
-        puts "Please enter a command:"
-        user_response = gets.chomp
-      when "exit"
-        exit_jukebox
-      else
-        puts "Invalid input, please try again:"
-        user_response = gets.chomp
-      end
-    end
-end 
+# def run(my_songs)
+#   puts "Please enter a command:"
+#   user_response = gets.chomp
+#   while user_response != "exit"
+#     case user_response
+#       when "help"
+#         help
+#         puts "Please enter a command:"
+#         user_response = gets.chomp
+#       when "list"
+#         list(my_songs)
+#         puts "Please enter a command:"
+#         user_response = gets.chomp
+#       when "play"
+#         play(my_songs)
+#         puts "Please enter a command:"
+#         user_response = gets.chomp
+#       when "exit"
+#         exit_jukebox
+#       else
+#         puts "Invalid input, please try again:"
+#         user_response = gets.chomp
+#       end
+#     end
+# end 
