@@ -36,7 +36,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   # It then stores the user's response using gets.strip.
   user_response = gets.strip
-  puts type(user_response)
+  puts user_response.class
   # If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>".
   if user_response >= 1 & user_response <= songs.length
     puts "Playing #{user_response}."
