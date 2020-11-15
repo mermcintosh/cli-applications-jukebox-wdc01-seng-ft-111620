@@ -38,7 +38,8 @@ def play(songs)
   user_response = gets.strip.to_i
   # If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>".
   if user_response >= 1 && user_response <= songs.length
-    puts "Playing #{user_response}."
+    current_song = songs[user_response]
+    puts "Playing #{current_song}."
     #decide whether the user's input is valid
       #if valid, play the song
         
